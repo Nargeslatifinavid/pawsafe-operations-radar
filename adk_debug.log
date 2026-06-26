@@ -1,0 +1,73 @@
+2026-06-26 14:00:40,305 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.backend.piping.pipe(['renderer', 'formatter', 'neato_no_op', 'quiet'])
+2026-06-26 14:00:40,311 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.backend.rendering.render(['renderer', 'formatter', 'neato_no_op', 'quiet'])
+2026-06-26 14:00:40,312 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.backend.unflattening.unflatten(['stagger', 'fanout', 'chain', 'encoding'])
+2026-06-26 14:00:40,312 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.backend.viewing.view(['quiet'])
+2026-06-26 14:00:40,315 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.quoting.quote(['is_html_string', 'is_valid_id', 'dot_keywords', 'endswith_odd_number_of_backslashes', 'escape_unescaped_quotes'])
+2026-06-26 14:00:40,315 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.quoting.a_list(['kwargs', 'attributes'])
+2026-06-26 14:00:40,316 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.quoting.attr_list(['kwargs', 'attributes'])
+2026-06-26 14:00:40,316 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.dot.Dot.clear(['self', 'keep_attrs'])
+2026-06-26 14:00:40,316 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.dot.Dot.__iter__(['self', 'subgraph'])
+2026-06-26 14:00:40,316 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.dot.Dot.node(['label', '_attributes'])
+2026-06-26 14:00:40,317 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.dot.Dot.edge(['label', '_attributes'])
+2026-06-26 14:00:40,317 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.dot.Dot.attr(['kw', '_attributes'])
+2026-06-26 14:00:40,317 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.dot.Dot.subgraph(['graph', 'name', 'comment', 'graph_attr', 'node_attr', 'edge_attr', 'body'])
+2026-06-26 14:00:40,318 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.piping.Pipe._pipe_legacy(['format', 'renderer', 'formatter', 'neato_no_op', 'quiet'])
+2026-06-26 14:00:40,319 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.saving.Save.save(['filename', 'directory'])
+2026-06-26 14:00:40,319 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.rendering.Render.render(['filename', 'directory', 'view', 'cleanup', 'format', 'renderer', 'formatter', 'neato_no_op', 'quiet', 'quiet_view'])
+2026-06-26 14:00:40,319 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.rendering.Render.view(['filename', 'directory', 'cleanup', 'quiet', 'quiet_view'])
+2026-06-26 14:00:40,320 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.unflattening.Unflatten.unflatten(['self', 'stagger', 'fanout', 'chain'])
+2026-06-26 14:00:40,320 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.graphs.BaseGraph.__init__(['name', 'comment', 'filename', 'directory', 'format', 'engine', 'encoding', 'graph_attr', 'node_attr', 'edge_attr', 'body', 'strict'])
+2026-06-26 14:00:40,321 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.sources.Source.from_file(['filename', 'directory', 'format', 'engine', 'encoding', 'renderer', 'formatter'])
+2026-06-26 14:00:40,322 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.sources.Source.__init__(['source', 'filename', 'directory', 'format', 'engine', 'encoding'])
+2026-06-26 14:00:40,322 - DEBUG - _tools.py:160 - deprecate positional args: graphviz.sources.Source.save(['filename', 'directory'])
+2026-06-26 14:00:40,352 - DEBUG - service_registry.py:223 - services.py not found in /home/nargeslatifi/pawsafe, skipping.
+2026-06-26 14:00:40,352 - INFO - service_factory.py:266 - Using in-memory memory service
+2026-06-26 14:00:40,352 - INFO - local_storage.py:88 - Using per-agent session storage rooted at /home/nargeslatifi/pawsafe
+2026-06-26 14:00:40,353 - INFO - local_storage.py:120 - Using per-agent artifact storage rooted at /home/nargeslatifi/pawsafe
+/home/nargeslatifi/pawsafe/.venv/lib/python3.12/site-packages/google/adk/cli/fast_api.py:553: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/home/nargeslatifi/pawsafe/.venv/lib/python3.12/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+2026-06-26 14:00:40,529 - DEBUG - selector_events.py:64 - Using selector: EpollSelector
+INFO:     Started server process [3355]
+INFO:     Waiting for application startup.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server started                                                      |
+|                                                                             |
+| For local testing, access at http://127.0.0.1:8000.                         |
++-----------------------------------------------------------------------------+
+
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57168 - "GET /dev-ui/?app=pawsafe_root HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57168 - "GET /dev-ui/assets/config/runtime-config.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57168 - "GET /dev-ui/prism-light.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57168 - "GET /version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56436 - "GET /list-apps?relative_path=./ HTTP/1.1" 200 OK
+2026-06-26 14:02:24,678 - INFO - envs.py:83 - Loaded .env file for pawsafe_root at /home/nargeslatifi/pawsafe/pawsafe_root/.env
+2026-06-26 14:02:24,678 - DEBUG - agent_loader.py:406 - Loading agent pawsafe_root - not in cache.
+2026-06-26 14:02:24,678 - DEBUG - agent_loader.py:303 - Loading .env for agent pawsafe_root from /home/nargeslatifi/pawsafe
+2026-06-26 14:02:24,679 - INFO - envs.py:83 - Loaded .env file for pawsafe_root at /home/nargeslatifi/pawsafe/pawsafe_root/.env
+2026-06-26 14:02:24,680 - DEBUG - agent_loader.py:131 - Module pawsafe_root has no root_agent. Trying next pattern.
+2026-06-26 14:02:24,680 - INFO - agent_loader.py:169 - Found root_agent in pawsafe_root.agent
+INFO:     127.0.0.1:56436 - "GET /dev/apps/pawsafe_root/build_graph HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57168 - "GET /dev/apps/pawsafe_root/build_graph_image?dark_mode=false HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56440 - "GET /dev/apps/pawsafe_root/builder?ts=1782482544267 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56450 - "GET /dev/apps/pawsafe_root/build_graph_image?dark_mode=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57168 - "GET /dev/apps/pawsafe_root/eval_sets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57168 - "GET /dev/apps/pawsafe_root/eval_results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57502 - "POST /apps/pawsafe_root/users/user/sessions HTTP/1.1" 403 Forbidden
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server shutting down...                                             |
++-----------------------------------------------------------------------------+
+
+2026-06-26 14:05:04,861 - INFO - runners.py:2115 - Closing runner...
+2026-06-26 14:05:04,862 - INFO - runners.py:2128 - Runner closed.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3355]
+
+Aborted!
