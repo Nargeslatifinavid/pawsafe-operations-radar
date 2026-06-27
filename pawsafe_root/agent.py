@@ -1,47 +1,20 @@
-"""PawSafe root agent — Day 1 scaffold.
-
-A single-agent that uses one stub tool () so we can verify
-the ADK plumbing end-to-end before adding real APIs tomorrow.
-"""
-
 from google.adk.agents import LlmAgent
-
-
-def get_weather(zip_code: str) -> dict:
-    """Return today's weather forecast for a US zip code.
-
-    This is a STUB implementation for Day 1. On Day 2 we will replace
-    the body with a real Open-Meteo API call. The agent does not need
-    to know the body changed — only the signature and docstring matter
-    to Gemini for tool selection.
-
-    Args:
-        zip_code: 5-digit US zip code, e.g. "90092".
-
-    Returns:
-        A dict with keys: zip_code, temperature_f, condition, humidity.
-    """
-    # Day 1 stub data — replace on Day 2
-    return {
-        "zip_code": zip_code,
-        "temperature_f": 78,
-        "condition": "Sunny",
-        "humidity": 0.42,
-    }
-
+from .weather_agent.agent import weather_agent
+from .aqi_agent.agent import aqi_agent
+from .dog_risk_agent.agent import dog_risk_agent
 
 root_agent = LlmAgent(
     name="pawsafe_root",
-    model="gemini-2.5-flash",
-    description="Helps pet-care businesses decide when it is safe to walk dogs.",
+    model="gemini-2.0-flash-lite",
+    description="Orchestrates weather, air quality, and dog-risk for safe walk decisions.",
     instruction=(
-        "You are PawSafe, an assistant for dog walkers and pet daycares in "
-        "Southern California. When the user gives you a zip code, call the "
-        "get_weather tool and use its result to give a short, friendly "
-        "recommendation (2-3 sentences) about whether it is safe to walk "
-        "dogs right now. If the temperature is above 85F, warn about hot "
-        "pavement. Always be brief."
+        "You are PawSafe, an assistant for dog walkers in Southern California. "
+        "When asked about walk safety for a dog: "
+        "1) Transfer to weather_agent to get current weather. "
+        "2) Transfer to aqi_agent to get air quality. "
+        "3) Transfer to dog_risk_agent to assess the dog breed and age. "
+        "4) After receiving all results, combine them into a friendly 3-4 sentence safety recommendation. "
+        "Never call tools directly. Always delegate to the appropriate sub-agent."
     ),
-    tools=[get_weather],
+    sub_agents=[weather_agent, aqi_agent, dog_risk_agent],
 )
-
