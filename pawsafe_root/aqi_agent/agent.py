@@ -30,7 +30,7 @@ def get_air_quality(latitude: float, longitude: float) -> dict:
 
 aqi_agent = LlmAgent(
     name="aqi_agent",
-    model="gemini-2.0-flash-lite",
+    model="gemini-2.5-flash",
     description="Provides current air quality index for a latitude/longitude location.",
     instruction="Use get_air_quality to fetch AQI, PM2.5, PM10, and air quality category.",
     tools=[get_air_quality],

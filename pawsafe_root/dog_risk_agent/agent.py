@@ -33,7 +33,7 @@ def get_dog_risk_profile(breed: str, age_years: float) -> dict:
 
 dog_risk_agent = LlmAgent(
     name="dog_risk_agent",
-    model="gemini-2.0-flash-lite",
+    model="gemini-2.5-flash",
     description="Assesses walk safety risk based on dog breed and age.",
     instruction="Use get_dog_risk_profile to assess risk for the given dog breed and age.",
     tools=[get_dog_risk_profile],

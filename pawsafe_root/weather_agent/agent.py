@@ -25,7 +25,7 @@ def get_weather(latitude: float, longitude: float) -> dict:
 
 weather_agent = LlmAgent(
     name="weather_agent",
-    model="gemini-2.0-flash-lite",
+    model="gemini-2.5-flash",
     description="Provides current weather for a latitude/longitude location.",
     instruction="Use get_weather to fetch temperature, humidity, wind speed, and UV index.",
     tools=[get_weather],
