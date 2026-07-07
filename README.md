@@ -199,7 +199,7 @@ This project demonstrates the following concepts from the Kaggle 5-Day AI Agents
 | **External API Integration** (Day 2) | Live data from Open-Meteo (weather + air quality, no key needed) |
 | **Agent Transfer Pattern** (Day 2) | Coordinator delegates to specialist sub-agents |
 | **Guardrails & Output Validation** (Day 4) | QC Agent blocks unsafe claims, medical language, stale data |
-| **Google ADK Framework** (Day 1-5) | Entire project built on ADK with LlmAgent |
+| **Google ADK Framework** (Day 1-5) | Entire project built on ADK with LlmAgent and Antigravity |
 | **Gemini 2.5 Flash** (Day 1) | Powers all agent reasoning and synthesis |
 
 ---
